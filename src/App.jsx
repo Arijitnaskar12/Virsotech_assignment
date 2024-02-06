@@ -26,7 +26,7 @@ function App() {
             <div key={i} className='headings'>
             <p>{item.item.name}</p>
             <p>{item.quantity}</p>
-            <p>{parseFloat(item.item.price)*parseFloat(item.quantity)}</p>
+            <p>{parseFloat(item.item.price)*parseFloat(item.quantity).toFixed(1)}</p>
             </div>
           ))
         }
